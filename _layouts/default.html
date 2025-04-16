@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description | escape }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Optional: Add Open Graph for social sharing -->
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  </head>
+  <body>
+    {% include header.html %} {{ content }} {% include footer.html %}
+  </body>
+</html>
